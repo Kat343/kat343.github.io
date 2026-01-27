@@ -1,5 +1,7 @@
 body {
   font: 1.2em / 1.5 system-ui;
+  margin-right: 150px;
+  margin-left: 150px;
 }
 
 .sender-column {
