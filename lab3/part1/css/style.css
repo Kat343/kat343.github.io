@@ -34,8 +34,19 @@ h2  {
 		
 }
 
-.job-Title {
+div {
 	color: darkslategrey;
 	font-weight: 700;
 
+}
+
+a:link  {
+	color: green;
+	
+}
+
+a:hover  {
+	color: darkgreen;
+	text-decoration: none;
+	
 }
