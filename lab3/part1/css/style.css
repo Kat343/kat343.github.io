@@ -4,4 +4,17 @@ html {
 
 body {
   font: 1.2em / 1.5 system-ui;
+  padding: 20px;
+  width: 500px;
+  background: #efefef;
+  margin: 0px auto;
+  
+}
+
+ul  {
+	background: white;
+	border: 5px solid purple;
+	border-radius: 20px;
+	padding: 30px;
+		
 }
