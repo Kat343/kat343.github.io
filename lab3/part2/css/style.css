@@ -8,6 +8,7 @@
 
 h1, h2  {
 	font-family: "Calibri", "Helvetica", sans-serif;
+	letter-spacing: 1px;
 	
 }
 
@@ -23,9 +24,66 @@ h2  {
 	
 }
 
+section > h2 + p {
+	text-indent: 2rem;
+	
+}
+
+a[href^="http"]::after {
+	content:"";
+	display: inline-block;
+	width: 0.8em;
+	height: 0.8em;
+	margin-left: 0.25em;
+	
+	background-size: 100%;
+	background-image: url("external-link-52.png");
+	
+}
+
+a:link, a:visited, a:hover, a:focus {
+	color: #aa6666;
+	
+}
+
+a:hover, a:focus  {
+	text-decoration: none;
+	
+}
+
+*:focus {
+	outline: none;
+	
+}
+
+li {
+	line-height: 1.6;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	
+}
+
+nav ul li{
+	list-style-type: none;
+}
+
+nav ul li a {
+	font-family: "Calibri", "Helvetica", sans-serif;
+	text-transform: uppercase;
+	border: 2px solid #aa6666;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	line-height: 3;
+	font-size: 1.2rem;
+	font-weight: bold;
+	width: 100%;
+}
+
 body {
 	font-family: "Georgia", "Baskerville", serif;
 	line-height: 1.6;
+	letter-spacing: 1px;
   margin: 0 auto;
   padding: 0 20px;
   min-width: 980px;
