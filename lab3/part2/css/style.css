@@ -1,13 +1,27 @@
 /* General setup */
 
+@font-face {
+	font-family: 'Roboto';
+	src: url('fonts/roboto/Roboto-Regular.woff') format('woff'),
+		url('fonts/roboto/Roboto-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
 
+@font-face {
+	font-family: 'LibreBaskerville';
+	src: url('fonts/librebaskerville/LibreBaskerville-Regular.woff') format('woff'),
+		url('fonts/librebaskerville/LibreBaskerville-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
 
 * {
   box-sizing: border-box;
 }
 
 h1, h2  {
-	font-family: "Calibri", "Helvetica", sans-serif;
+	font-family: "Roboto", sans-serif;
 	letter-spacing: 1px;
 	
 }
@@ -68,20 +82,21 @@ nav ul li{
 }
 
 nav ul li a {
-	font-family: "Calibri", "Helvetica", sans-serif;
+	font-family: "Roboto", sans-serif;
 	text-transform: uppercase;
 	border: 2px solid #aa6666;
 	display: inline-block;
 	text-decoration: none;
 	text-align: center;
 	line-height: 3;
+	margin-bottom: 10px;
 	font-size: 1.2rem;
 	font-weight: bold;
 	width: 100%;
 }
 
 body {
-	font-family: "Georgia", "Baskerville", serif;
+	font-family: "LibreBaskerville", serif;
 	line-height: 1.6;
 	letter-spacing: 1px;
   margin: 0 auto;
