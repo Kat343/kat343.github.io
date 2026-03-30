@@ -33,7 +33,7 @@ for (const image of images) {
     newImage.src = baseURL + image.filename;
     newImage.alt = image.alt;
     newImage.setAttribute("tabindex", "0");
-    thumbBar = appendChild(newImage);
+    thumbBar.appendChild(newImage);
     newImage.addEventListener("click", UpdateDisplayedImage);
 }
 
@@ -43,5 +43,16 @@ function UpdateDisplayedImage(event) {
 
 };
 
+btn.addEventListener("click", () => {
+    if (btn.classList.contains("dark")) {
+    btn.textContent = "Lighten";
+    overlay.style.backgroundColor = "rgb(0 0 0 / 0.5)";
+    btn.classList.remove("dark");
+    }
 
-
+    else 
+    {btn.textContent = "Darken";
+    overlay.style.backgroundColor = "rgb(0 0 0 / 0)";
+    btn.classList.add("dark");
+    }
+});
