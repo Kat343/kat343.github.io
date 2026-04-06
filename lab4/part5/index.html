@@ -13,60 +13,103 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    We want your feedback!
+    <h1>We want your feedback!</h1>
 
-    We're very excited that you visited the little house in the woods,
+    <p>We're very excited that you visited the little house in the woods,
     and we want to hear what you thought of it! Please fill in the below
     sections. You don't need to provide your name or contact details, but
     if you do, we'll enter you into a prize draw where you'll have a chance
-    to win prizes.
+    to win prizes.</p>
+
+    --
+<form>
+    <h2>Facilities</h2>
+	
+<fieldset>
+    <legend>Was the porridge</legend>
+    <input 
+	type="radio"
+	id="porridgeChoice1"
+	name="porridge"
+	value="tooHot"
+	checked>
+	<label for="porridgeChoice1">Too hot?</label>
+	
+	<input 
+	type="radio"
+	id="porridgeChoice2"
+	name="porridge"
+	value="tooCold">
+	<label for="porridgeChoice2">Too cold?</label>
+	
+	<input 
+	type="radio"
+	id="porridgeChoice3"
+	name="porridge"
+	value="justRight">
+	<label for="porridgeChoice3">Just right?</label>
+</fieldset>
+
+<fieldset>
+    <legend>Were the beds</legend>
+	<input type="checkbox" id="bedTooHard" name="beds">
+    <label for="bedToHard">Too hard?</label>
+	
+	<input type="checkbox" id="bedTooSoft" name="beds">
+    <label for="bedToHard">Too soft?</label>
+	
+	<input type="checkbox" id="bedJustRight" name="beds">
+    <label for="bedToHard">Just right?</label>
+</fieldset>
+
+<fieldset>
+    <legend>Describe the chairs (select all you agree with)</legend>
+	<input type="checkbox" id="comfy" name="chairs">
+    <label for="bedToHard">Comfy</label>
+	
+	<input type="checkbox" id="luxurious" name="chairs">
+    <label for="bedToHard">Luxurious</label>
+	
+	<input type="checkbox" id="hiTech" name="chairs">
+    <label for="bedToHard">Hi tec</label>
+	
+	<input type="checkbox" id="pretty" name="chairs">
+    <label for="bedToHard">Pretty</label>
+	
+	<input type="checkbox" id="majestic" name="chairs">
+    <label for="bedToHard">Majestic</label>   
+</fieldset>
 
     --
 
-    Facilities
+    <h2>About your hosts</h2>
 
-    Was the porridge
-    Too hot?
-    Too cold?
-    Just right?
-
-    Were the beds
-    Too hard?
-    Too soft?
-    Just right?
-
-    Describe the chairs (select all you agree with)
-    Comfy
-    Luxurious
-    Hi tec
-    Pretty
-    Majestic
-
-    --
-
-    About your hosts
-
-    Who's your favorite bear?
-    Papa bear
+<fieldset>
+    <label for="bear">Who's your favorite bear?</label>
+	<select name="bear" id="bear">
+    <option value="papaBear">Papa bear</option>
     Mama bear
     Junior
     Dozer
+</fieldset>
 
-    Which greeting did you prefer?
+<fieldset>
+    <legend>Which greeting did you prefer?</legend>
     Wave
     Friendly greeting
     Growl
     Claw marks in the door
+</fieldset>
 
     --
 
-    Any other feedback?
+    <h2>Any other feedback?</h2>
 
     Give us your comments
 
     --
 
-    Your details
+    <h2>Your details</h2>
 
     Name
     Email
@@ -77,5 +120,6 @@
     Submit
 
     --
+</form>
   </body>
 </html>
