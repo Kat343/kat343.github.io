@@ -15,14 +15,17 @@
   <body>
     <h1>We want your feedback!</h1>
 
-    <p>We're very excited that you visited the little house in the woods,
+    <p>We're very excited that you visited the <a href="#">little house in the woods</a>,
     and we want to hear what you thought of it! Please fill in the below
     sections. You don't need to provide your name or contact details, but
-    if you do, we'll enter you into a prize draw where you'll have a chance
+    if you do, we'll enter you into a <a href="#">prize draw</a> where you'll have a chance
     to win prizes.</p>
 
-    --
+   <img src="https://mdn.github.io/shared-assets/images/examples/learn/woodland-strip.jpg" alt="">
+   
 <form>
+
+	<div class="form-section">
     <h2>Facilities</h2>
 	
 <fieldset>
@@ -53,74 +56,99 @@
 <fieldset>
     <legend>Were the beds</legend>
 	<input type="checkbox" id="bedTooHard" name="beds">
-    <label for="bedToHard">Too hard?</label>
+    <label for="bedTooHard">Too hard?</label>
 	
 	<input type="checkbox" id="bedTooSoft" name="beds">
-    <label for="bedToHard">Too soft?</label>
+    <label for="bedTooSoft">Too soft?</label>
 	
 	<input type="checkbox" id="bedJustRight" name="beds">
-    <label for="bedToHard">Just right?</label>
+    <label for="bedJustRight">Just right?</label>
 </fieldset>
 
 <fieldset>
     <legend>Describe the chairs (select all you agree with)</legend>
 	<input type="checkbox" id="comfy" name="chairs">
-    <label for="bedToHard">Comfy</label>
+    <label for="comfy">Comfy</label>
 	
 	<input type="checkbox" id="luxurious" name="chairs">
-    <label for="bedToHard">Luxurious</label>
+    <label for="luxurious">Luxurious</label>
 	
 	<input type="checkbox" id="hiTech" name="chairs">
-    <label for="bedToHard">Hi tec</label>
+    <label for="hiTech">Hi tec</label>
 	
 	<input type="checkbox" id="pretty" name="chairs">
-    <label for="bedToHard">Pretty</label>
+    <label for="pretty">Pretty</label>
 	
 	<input type="checkbox" id="majestic" name="chairs">
-    <label for="bedToHard">Majestic</label>   
+    <label for="majestic">Majestic</label>   
 </fieldset>
 
-    --
+	</div>
+	
+	<div class="form-section">
 
     <h2>About your hosts</h2>
 
-<fieldset>
+<fieldset class="separator">
     <label for="bear">Who's your favorite bear?</label>
 	<select name="bear" id="bear">
     <option value="papaBear">Papa bear</option>
     <option value="mamaBear">Mama bear</option>
     <option value="junior">Junior</option>
     <option value="dozer">Dozer</option>
+	</select>
 </fieldset>
-
-<fieldset>
+	
+<fieldset class="separator">
     <label for="greeting">Which greeting did you prefer?</label>
     <select name="greeting" id="greeting">
 	<option value="wave">Wave</option>
     <option value="friendly">Friendly greeting</option>
     <option value="growl">Growl</option>
     <option value="claws">Claw marks in the door</option>
+	</select>
 </fieldset>
 
-    --
+	</div>
+
+
+    <div class="form-section">
+	
 
     <h2>Any other feedback?</h2>
-
-    Give us your comments
-
-    --
+    <label for="comments">Give us your comments</label>
+	<br>
+	<textarea id="comments" name="comments" rows="5" cols="33"></textarea>
+	
+	</div>
+ 
+	<div class="form-section">
 
     <h2>Your details</h2>
 
-    Name
-    Email
-    Phone
+	<p class="separator">
+    <label for="name">Name</label>
+	<input type="text" name="name" id="name" required>
+	</p>
+	
+	<p class="separator">
+    <label for="email">Email</label>
+	<input type="email" name="email" id="email" required>
+	</p>
+	
+	<p class="separator">
+    <label for="phone">Phone</label>
+	<input type="tel" name="phone" id="phone">
+	</p>
+	
+	</div>
+	
+	<div class="form-section">
+	
+    <button>Submit</button>
+	
+	</div>
 
-    --
-
-    Submit
-
-    --
 </form>
   </body>
 </html>
