@@ -6,6 +6,8 @@ const ctx = canvas.getContext("2d");
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
 
+const ballCounter = document.querySelector("p");
+
 // function to generate random number
 
 function random(min, max) {
@@ -167,6 +169,7 @@ while (balls.length < 25) {
 const evilBall = new EvilCircle(random(0, width), random(0, height));
 
 function loop() {
+  let ballCount = 0;
   ctx.fillStyle = "rgb(0 0 0 / 25%)";
   ctx.fillRect(0, 0, width, height);
 
@@ -175,8 +178,11 @@ function loop() {
     ball.draw();
     ball.update();
     ball.collisionDetect();
+    ballCount += 1;
     }
   }
+
+  ballCounter.textContent = "Ball Counter: " + ballCount;
 
   evilBall.draw();
   evilBall.checkBounds();
@@ -184,5 +190,6 @@ function loop() {
 
   requestAnimationFrame(loop);
 }
+
 
 loop();
